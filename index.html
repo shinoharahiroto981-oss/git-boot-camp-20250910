@@ -32,6 +32,7 @@
                     return decimalPointCalculate(f1.multiply(f2), decimalPoint)
                 case 'mod':
                     return decimalPointCalculate(f1.divide(f2), decimalPoint)
+
                 case 'square':
                     return decimalPointCalculate(f1.multiply(f1), decimalPoint)
                 default :
@@ -47,8 +48,8 @@
                 return value.floor()
             }
             if(decimalPoint === 'round'){
-                // return new bigDecimal(Math.round(value.getValue()))
-                return value.floor()
+                return new bigDecimal(Math.round(value.getValue()))
+                
             }
             return value
         }
