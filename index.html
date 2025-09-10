@@ -17,7 +17,7 @@
                 // return alert("数字をいれてください")
             // }
             if(isNaN(e1)){
-                return alert("数字をいれてください")
+                return alert("数字いれてください")
             }
             // var f1 = bigDecimal(e1)
             const f1 = new bigDecimal(Math.abs(e1));
@@ -41,7 +41,7 @@
         }
         function decimalPointCalculate(value, decimalPoint){
             if(decimalPoint === 'ceil'){
-                // return value.ceil()
+                return value.ceil()
                 return value.floor()
             }
             if(decimalPoint === 'floor'){
